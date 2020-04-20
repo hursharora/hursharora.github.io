@@ -1,0 +1,20 @@
+.NavLink {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.NavLink {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.NavLink a {
+    transition: all 0.3s ease 0s;
+}
+
+.NavLink a:hover,
+.NavLink a.active {
+    color: #0088a9;
+}
