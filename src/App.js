@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import NavBar from "./NavBar/NavBar";
-
+import ProjectCarousel from "./ProjectCarousel/ProjectCarousel";
 
 class App extends Component {
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
         <>
           <NavBar/>
-          <button>test</button>
+          <ProjectCarousel/>
         </>
     )
   }
