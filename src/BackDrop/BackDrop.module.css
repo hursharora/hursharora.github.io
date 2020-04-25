@@ -1,0 +1,12 @@
+.BackDrop {
+    height: 100vh;
+    background-color: #0088a9;
+    overflow: hidden;
+    display: block;
+}
+
+.Video {
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 1;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./ProjectItem/ProjectItem";
 import classes from "./ProjectCarousel.module.css"
 
-const ProjectCarousel = props => {
+const ProjectCarousel = () => {
     return (
         <div className={classes.ProjectCarousel}>
             <div className={classes.ProjectCarouselRow}>

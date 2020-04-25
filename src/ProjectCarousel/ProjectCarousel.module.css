@@ -3,11 +3,11 @@
 
     /* Tile Dimensions */
     --carousel-tile-spacing: 10px;
-    --carousel-tile-width:   250px;
+    --carousel-tile-width:   350px;
     --carousel-tile-height:  calc(var(--carousel-tile-width) / (16 / 9));
 
     /* Growth Factor */
-    --carousel-growth-factor: 1.5;
+    --carousel-growth-factor: 1.3;
 
     /* Fade to Opacity */
     --carousel-fade-opacity:   0.25;
@@ -25,13 +25,14 @@
 
 /* Carousel Container */
 .ProjectCarousel {
-    margin-top: 50px;
     box-sizing: border-box;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     background: #1c2024;
     text-align: center;
+    padding: 30px;
+    z-index: 90;
 }
 
 /* Carousel Row */
@@ -41,6 +42,7 @@
     margin: calc((var(--carousel-tile-height) * (var(--carousel-growth-factor) - 1)) / 2)
             calc((var(--carousel-tile-width) * (var(--carousel-growth-factor) - 1)) / 2);
     transition: var(--carousel-transition-2);
+
 }
 
 /* Content Tile */
