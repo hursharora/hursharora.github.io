@@ -1,0 +1,16 @@
+.NameText {
+    color: white;
+    z-index: 30;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -70%);
+    font-size: 100px;
+    animation: fadin 5s;
+}
+
+@keyframes fadin {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+

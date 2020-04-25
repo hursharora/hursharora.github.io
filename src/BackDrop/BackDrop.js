@@ -6,7 +6,7 @@ const BackDrop = props => {
     let video = null;
     if (props.video) {
         video = (
-            <video autoPlay muted loop className={classes.Video}>
+            <video autoPlay muted loop>
                 <source src={Video}/>
             </video>
         )
