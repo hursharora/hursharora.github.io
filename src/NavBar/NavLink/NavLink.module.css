@@ -10,11 +10,20 @@
     padding: 0 20px;
 }
 
-.NavLink a {
+
+.NavLink button {
     transition: all 0.3s ease 0s;
+    background-color: transparent;
+    border-color: transparent;
+    color: #edf0f1;
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    outline: none;
 }
 
-.NavLink a:hover,
-.NavLink a.active {
-    color: #0088a9;
+.NavLink button:hover,
+.NavLink button.active {
+    color: #0088a9;;
 }

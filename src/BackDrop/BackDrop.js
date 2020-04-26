@@ -11,9 +11,9 @@ const BackDrop = props => {
             </video>
         )
     }
-
+    
     return (
-        <div className={classes.BackDrop}>
+        <div className={classes.BackDrop} ref={props.sectionRef}>
             {props.children}
             {video}
         </div>

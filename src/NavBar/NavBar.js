@@ -17,7 +17,6 @@ class NavBar extends React.Component {
         })
     }
 
-
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         return this.state.transparent !== nextState.transparent;
     }
@@ -34,9 +33,9 @@ class NavBar extends React.Component {
                 <p>Logo</p>
                 <nav>
                     <ul className={classes.navLinks}>
-                        <NavLink link="#" active={true}>Home</NavLink>
-                        <NavLink link="#">About</NavLink>
-                        <NavLink link="#">Projects</NavLink>
+                        <NavLink link="#" clicked={this.props.homeRef} active={true}>Home</NavLink>
+                        <NavLink link="#" clicked={this.props.aboutRef}>About</NavLink>
+                        <NavLink link="#" clicked={this.props.projectRef}>Projects</NavLink>
                     </ul>
                 </nav>
             </header>

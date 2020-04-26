@@ -7,14 +7,21 @@ import NameText from "./NameText/NameText";
 
 class App extends Component {
 
+    projectRef = React.createRef()
+    aboutRef = React.createRef();
+    homeRef = React.createRef();
+
     render() {
         return (
             <>
-                <NavBar/>
-                <BackDrop video>
+                <NavBar projectRef={this.projectRef} aboutRef={this.aboutRef} homeRef={this.homeRef}/>
+                <BackDrop video sectionRef={this.homeRef}>
                     <NameText/>
                 </BackDrop>
-                <BackDrop>
+                <BackDrop sectionRef={this.aboutRef}>
+
+                </BackDrop>
+                <BackDrop sectionRef={this.projectRef}>
                     <ProjectCarousel/>
                 </BackDrop>
             </>
