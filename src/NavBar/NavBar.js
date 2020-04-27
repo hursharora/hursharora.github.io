@@ -8,6 +8,9 @@ class NavBar extends React.Component {
         activeSection: "home"
     }
 
+    windowHeight = window.innerHeight;
+    halfWindowH = this.windowHeight/2;
+
     componentDidMount() {
         window.addEventListener("scroll", () => {
             if (window.pageYOffset > 10) {
@@ -15,9 +18,10 @@ class NavBar extends React.Component {
             } else {
                 this.setState({transparent: true});
             }
-            if (window.pageYOffset < window.innerHeight) {
+            if (window.pageYOffset + this.halfWindowH < this.windowHeight) {
                 this.setState({activeSection: "home"});
-            } else if (window.pageYOffset > window.innerHeight && window.pageYOffset < window.innerHeight*2) {
+            } else if (window.pageYOffset + this.halfWindowH > this.windowHeight
+                        && window.pageYOffset + this.halfWindowH < this.windowHeight*2) {
                 this.setState({activeSection: "about"});
             } else {
                 this.setState({activeSection: "projects"});
