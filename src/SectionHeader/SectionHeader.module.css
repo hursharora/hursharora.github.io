@@ -1,0 +1,9 @@
+.SectionHeader {
+    color: white;
+    z-index: 30;
+    top: 15%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}

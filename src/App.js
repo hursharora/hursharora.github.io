@@ -4,6 +4,7 @@ import NavBar from "./NavBar/NavBar";
 import ProjectCarousel from "./ProjectCarousel/ProjectCarousel";
 import BackDrop from "./BackDrop/BackDrop";
 import NameText from "./NameText/NameText";
+import SectionHeader from "./SectionHeader/SectionHeader";
 
 class App extends Component {
 
@@ -19,9 +20,10 @@ class App extends Component {
                     <NameText/>
                 </BackDrop>
                 <BackDrop sectionRef={this.aboutRef}>
-
+                    <SectionHeader>About</SectionHeader>
                 </BackDrop>
                 <BackDrop sectionRef={this.projectRef}>
+                    <SectionHeader>Projects</SectionHeader>
                     <ProjectCarousel/>
                 </BackDrop>
             </>
