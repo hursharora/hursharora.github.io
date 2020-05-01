@@ -11,11 +11,7 @@ import TileStyles from "./TileStyles.module.css"
 import DoorIDImage from "./assets/DoorIDThumb.PNG"
 import TVShowImage from "./assets/TVShowTrackerImg.PNG"
 
-//images, content in projects
-//logo
-//refine spacing, make it look good on laptop display
-//publish
-//add name on navbar after scroll
+
 
 const DoorID_description =
     <p>

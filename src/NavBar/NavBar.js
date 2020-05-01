@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./NavBar.module.css"
 import NavLink from "./NavLink/NavLink";
+import Logo from "../assets/logo.png"
 
 class NavBar extends React.Component {
     state = {
@@ -43,7 +44,7 @@ class NavBar extends React.Component {
 
         return (
             <header className={usedClasses.join(" ")}>
-                <p>Logo</p>
+                <img src={Logo} alt="logo"/>
                 <nav>
                     <ul className={classes.navLinks}>
                         <NavLink clicked={this.props.homeRef}
