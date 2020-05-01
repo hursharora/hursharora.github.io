@@ -3,7 +3,9 @@ import classes from "../ProjectCarousel.module.css"
 
 const ProjectItem = props => {
     return (
-        <div className={classes.ProjectCarouselItem}>{props.children}</div>
+        <div onClick={() => props.click(props.id)} className={classes.ProjectCarouselItem}>
+                <p>{props.children}</p>
+        </div>
     )
 }
 

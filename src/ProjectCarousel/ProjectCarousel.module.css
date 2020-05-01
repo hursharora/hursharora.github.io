@@ -66,6 +66,19 @@
     display: block;
 }
 
+.ProjectCarouselItem p {
+    font-size: 30px;
+}
+
+.TVShowTracker {
+    background: linear-gradient(to bottom, #1c2024, honeydew);
+}
+
+.DoorID {
+    background: linear-gradient(to bottom, #7747e3, #877d2a);
+}
+
+
  /*Carousel Row on Hover */
 .ProjectCarouselRow:hover {
     -webkit-transform: translate3d(var(--carousel-offset-left), 0, 0);
