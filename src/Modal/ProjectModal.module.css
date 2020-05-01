@@ -1,6 +1,6 @@
 .Modal {
     z-index: 500;
-    position: relative;
+    position: fixed;
     background-color: white;
     width: 60%;
     padding: 16px;
@@ -10,6 +10,66 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+.Modal h1 {
+    font-size: 4rem;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    height: 50%;
+}
+
+.ImageContainer {
+    position: relative;
+    top: 50%;
+}
+
+.TextContainer {
+    text-align: left;
+}
+
+.TextContainer p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.CloseButton {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+    left: 16px;
+    position: absolute;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+}
+
+.CloseButton:hover {
+    opacity: 1;
+}
+
+.CloseButton:before, .CloseButton:after {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    content: " ";
+    height: 30px;
+    width: 2px;
+    background-color: #333;
+}
+
+.CloseButton:before {
+    transform: rotate(45deg);
+}
+
+.CloseButton:after {
+    transform: rotate(-45deg);
 }
 
 .ModalBackdrop {

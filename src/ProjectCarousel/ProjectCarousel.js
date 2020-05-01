@@ -4,7 +4,10 @@ import classes from "./ProjectCarousel.module.css"
 
 const ProjectCarousel = props => {
     let projects = props.projects.map(proj => (
-        <ProjectItem id={proj.id} click={props.projectClick}>{proj.name}</ProjectItem>
+        <ProjectItem id={proj.id}
+                     click={props.projectClick}
+                     key={proj.id}
+                     useClass={proj.tileStyle}>{proj.name}</ProjectItem>
     ))
 
     return (
