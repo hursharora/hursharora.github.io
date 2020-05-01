@@ -8,11 +8,14 @@ import SectionHeader from "./SectionHeader/SectionHeader";
 import AboutContent from "./AboutContent/AboutContent";
 import ProjectModal from "./Modal/ProjectModal";
 import TileStyles from "./TileStyles.module.css"
+import DoorIDImage from "./assets/DoorIDThumb.PNG"
+import TVShowImage from "./assets/TVShowTrackerImg.PNG"
 
 //images, content in projects
 //logo
-//refine spacing
+//refine spacing, make it look good on laptop display
 //publish
+//add name on navbar after scroll
 
 const DoorID_description =
     <p>
@@ -34,12 +37,23 @@ const DoorID_description =
 
 const TVShow_description =
     <p>
-        For one of my course projects, I decided to make a TV show tracker...
+        For one of my course projects, I decided to make a TV show tracker. Users can search for shows,
+        add them to a watch list, and track what episodes they have watched. All TV Show data, including
+        episode/season information and poster images, are retrieved using TVDB's API. <br/><br/>
+        The entire project is made using Java and utilizes JavaFX for UI and jUnit for testing.
+        Design patterns are used to reduce coupling and increase cohesion of code.<br/><br/>
+        Since TVDB updated their API, the project no longer functions. <br/><br/>
+        The project Github is available <a href="https://github.com/hursharora/TVShow-Tracker">here</a>.
+        <br/><br/><strong>Technologies Used: Java, JavaFX, jUnit, JSON, IntelliJ</strong>
     </p>
 
 const NoteSet_description =
     <p>
-        and since I've really been enojoying React lately, I decided to create NoteSet.
+        NoteSet is a project I am currently working on using React and Firebase.
+        I've always been searching for the perfect note taking app, however I've never been able to find
+        one that has all the features I want. Since I've really been enjoying React lately,
+        I decided to create create NoteSet in an attempt to create my perfect note taking app. <br/><br/>
+        More information to come.
     </p>
 
 const about_description =
@@ -59,13 +73,13 @@ class App extends Component {
         showingModal: false,
         projects: [{
                         name: "TVShow Tracker",
-                        image: null,
+                        image: TVShowImage,
                         description: TVShow_description,
                         id: 0,
                         tileStyle: TileStyles.TVShowTracker
                     }, {
                         name: "DoorID",
-                        image: null,
+                        image: DoorIDImage,
                         description: DoorID_description,
                         id: 1,
                         tileStyle: TileStyles.DoorID

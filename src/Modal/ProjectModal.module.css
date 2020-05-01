@@ -3,7 +3,7 @@
     position: fixed;
     background-color: white;
     width: 60%;
-    padding: 16px;
+    padding: 24px;
     height: 80%;
     border-radius: 20px;
     left: 50%;
@@ -19,17 +19,26 @@
 .Container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    height: 50%;
+    grid-gap: 30px;
+    height: 80%;
+    overflow: hidden;
 }
 
 .ImageContainer {
     position: relative;
+    display: flex;
+    align-items: center;
     top: 50%;
+    transform: translateY(-50%);
+}
+
+.ImageContainer img {
+    width: 100%;
 }
 
 .TextContainer {
     text-align: left;
+    overflow: auto;
 }
 
 .TextContainer p {

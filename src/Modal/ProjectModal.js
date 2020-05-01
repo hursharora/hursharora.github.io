@@ -15,7 +15,9 @@ class ProjectModal extends React.Component {
                                 <h1>{this.props.toDisplay.name}</h1>
                                     <button onClick={this.props.closed} className={classes.CloseButton}/>
                                 <div className={classes.Container}>
-                                    <div className={classes.ImageContainer}>IMAGE GOES HERE</div>
+                                    <div className={classes.ImageContainer}>
+                                        <img src={this.props.toDisplay.image} alt="Not available"/>
+                                    </div>
                                     <div className={classes.TextContainer}>{this.props.toDisplay.description}</div>
                                 </div>
                              </div>
