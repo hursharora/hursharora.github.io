@@ -42,9 +42,19 @@ const NoteSet_description =
         and since I've really been enojoying React lately, I decided to create NoteSet.
     </p>
 
+const about_description =
+    <p>
+        I'm a second year Computer Science student at
+        The University of British Columbia. Thanks for visiting my website! <br/><br/>
+        Currently I'm working on on a note taking and task management web app using React
+        and Firebase. <br/><br/>
+        Looking for co-op internship opportunities for Fall 2020.<br/><br/>
+        Scroll down to see some of my projects.
+    </p>
+
 class App extends Component {
     state = {
-        aboutDescription: null, //Todo: move about description here for easy maintainability
+        aboutDescription: about_description,
         clickedProject: null,
         showingModal: false,
         projects: [{
@@ -91,7 +101,7 @@ class App extends Component {
                 </BackDrop>
                 <BackDrop sectionRef={this.aboutRef}>
                     <SectionHeader>About</SectionHeader>
-                    <AboutContent/>
+                    <AboutContent desc={this.state.aboutDescription}/>
                 </BackDrop>
                 <BackDrop sectionRef={this.projectRef}>
                     <SectionHeader>Projects</SectionHeader>
