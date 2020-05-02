@@ -12,7 +12,6 @@ import DoorIDImage from "./assets/DoorIDThumb.PNG"
 import TVShowImage from "./assets/TVShowTrackerImg.PNG"
 
 
-
 const DoorID_description =
     <p>
         DoorID was a 24 hour Hackathon project made at nwHacks 2020. The idea behind
@@ -48,7 +47,7 @@ const NoteSet_description =
         NoteSet is a project I am currently working on using React and Firebase.
         I've always been searching for the perfect note taking app, however I've never been able to find
         one that has all the features I want. Since I've really been enjoying React lately,
-        I decided to create create NoteSet in an attempt to create my perfect note taking app. <br/><br/>
+        I decided to create NoteSet in an attempt to create my perfect note taking app. <br/><br/>
         More information to come.
     </p>
 
