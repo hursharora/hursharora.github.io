@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc87dbbe.chunk.css",
+    "main.js": "/static/js/main.4a191809.chunk.js",
+    "main.js.map": "/static/js/main.4a191809.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ed36117f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ed36117f.js.map",
+    "static/js/2.91fe5384.chunk.js": "/static/js/2.91fe5384.chunk.js",
+    "static/js/2.91fe5384.chunk.js.map": "/static/js/2.91fe5384.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.38d03ce7d4799f0c3116fc417fbae219.js": "/precache-manifest.38d03ce7d4799f0c3116fc417fbae219.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fc87dbbe.chunk.css.map": "/static/css/main.fc87dbbe.chunk.css.map",
+    "static/js/2.91fe5384.chunk.js.LICENSE.txt": "/static/js/2.91fe5384.chunk.js.LICENSE.txt",
+    "static/media/DoorIDThumb.PNG": "/static/media/DoorIDThumb.5afdcdb9.PNG",
+    "static/media/TVShowTrackerImg.PNG": "/static/media/TVShowTrackerImg.cd01b2a6.PNG",
+    "static/media/VideoBackground.mp4": "/static/media/VideoBackground.232fa4e8.mp4",
+    "static/media/headshot.jpg": "/static/media/headshot.96620795.jpg",
+    "static/media/logo.png": "/static/media/logo.79b7f306.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed36117f.js",
+    "static/js/2.91fe5384.chunk.js",
+    "static/css/main.fc87dbbe.chunk.css",
+    "static/js/main.4a191809.chunk.js"
+  ]
+}
