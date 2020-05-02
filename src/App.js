@@ -29,7 +29,7 @@ const DoorID_description =
         The project Github for the Android app is available
         <a href="https://github.com/hursharora/DoorbellID"> here</a> and for the server
         <a href="https://github.com/parsasi/projectDoorbellServer"> here</a>. The hackathon Devpost is available
-        <a href="https://devpost.com/software/door-identify"> here</a><br/><br/>
+        <a href="https://devpost.com/software/door-identify"> here</a>.<br/><br/>
         <strong>Technologies Used: Java, Android, Android Studio, JSON</strong>
     </p>
 
@@ -61,7 +61,8 @@ const about_description =
         Currently I'm working on on a note taking and task management web app using React
         and Firebase. <br/><br/>
         Looking for co-op internship opportunities for Fall 2020.<br/><br/>
-        Scroll down to see some of my projects.
+        Check out my <a href="https://github.com/hursharora">Github</a><br/>
+        Contact me: hursharora@gmail.com
     </p>
 
 class App extends Component {
