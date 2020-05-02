@@ -11,6 +11,9 @@ import TileStyles from "./TileStyles.module.css"
 import DoorIDImage from "./assets/DoorIDThumb.PNG"
 import TVShowImage from "./assets/TVShowTrackerImg.PNG"
 
+//zoom everything out
+//add contact link in footer
+//add github link in navbar
 
 const DoorID_description =
     <p>

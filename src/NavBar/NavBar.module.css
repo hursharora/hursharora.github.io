@@ -14,7 +14,7 @@
     right: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
+    padding: 2vh 5%;
     z-index: 100;
     transition: 0.7s ease;
 }
