@@ -8,12 +8,11 @@ import SectionHeader from "./SectionHeader/SectionHeader";
 import AboutContent from "./AboutContent/AboutContent";
 import ProjectModal from "./Modal/ProjectModal";
 import TileStyles from "./TileStyles.module.css"
-import DoorIDImage from "./assets/DoorIDThumb.PNG"
-import TVShowImage from "./assets/TVShowTrackerImg.PNG"
+import DoorIDImage from "./assets/DoorIDThumb.PNG";
+import TVShowImage from "./assets/TVShowTrackerImg.PNG";
+import NoteSet1 from "./assets/NoteSet1.PNG";
+import NoteSet2 from "./assets/NoteSet2.PNG";
 
-//zoom everything out
-//add contact link in footer
-//add github link in navbar
 
 const DoorID_description =
     <p>
@@ -30,7 +29,7 @@ const DoorID_description =
         <a href="https://github.com/hursharora/DoorbellID"> here</a> and for the server
         <a href="https://github.com/parsasi/projectDoorbellServer"> here</a>. The hackathon Devpost is available
         <a href="https://devpost.com/software/door-identify"> here</a>.<br/><br/>
-        <strong>Technologies Used: Java, Android, Android Studio, JSON</strong>
+        <b>Technologies Used: Java, Android, Android Studio, JSON</b>
     </p>
 
 const TVShow_description =
@@ -42,16 +41,19 @@ const TVShow_description =
         Design patterns are used to reduce coupling and increase cohesion of code.<br/><br/>
         Since TVDB updated their API, the project no longer functions. <br/><br/>
         The project Github is available <a href="https://github.com/hursharora/TVShow-Tracker">here</a>.
-        <br/><br/><strong>Technologies Used: Java, JavaFX, jUnit, JSON, IntelliJ</strong>
+        <br/><br/><b>Technologies Used: Java, JavaFX, jUnit, JSON, IntelliJ</b>
     </p>
 
 const NoteSet_description =
     <p>
-        NoteSet is a project I am currently working on using React and Firebase.
-        I've always been searching for the perfect note taking app, however I've never been able to find
+        NoteSet is a note taking and task management web app made using React and Firebase.
+        I've always been searching for the perfect note taking app, but I haven't been able to find
         one that has all the features I want. Since I've really been enjoying React lately,
         I decided to create NoteSet in an attempt to create my perfect note taking app. <br/><br/>
-        More information to come.
+        You can visit the live version <a href="https://noteset-8f7ba.web.app/">here</a> (works best on Chrome)
+        or check out
+        the project Github <a href="https://github.com/hursharora/noteset">here</a>.
+        <br/><br/><b>Technologies Used: React, React Router, Redux, Firebase, JavaScript, CSS, HTML/JSX</b>
     </p>
 
 const about_description =
@@ -73,18 +75,21 @@ class App extends Component {
         projects: [{
                         name: "TVShow Tracker",
                         image: TVShowImage,
+                        image2: null,
                         description: TVShow_description,
                         id: 0,
                         tileStyle: TileStyles.TVShowTracker
                     }, {
                         name: "DoorID",
                         image: DoorIDImage,
+                        image2: null,
                         description: DoorID_description,
                         id: 1,
                         tileStyle: TileStyles.DoorID
                     }, {
                         name: "NoteSet",
-                        image: null,
+                        image: NoteSet1,
+                        image2: NoteSet2,
                         description: NoteSet_description,
                         id: 2,
                         tileStyle: TileStyles.NoteSet
@@ -120,7 +125,7 @@ class App extends Component {
                     <SectionHeader>Projects</SectionHeader>
                     <ProjectModal show={this.state.showingModal}
                                   closed={this.modalClosedHandler}
-                                  toDisplay={this.state.clickedProject}>Test</ProjectModal>
+                                  toDisplay={this.state.clickedProject}/>
                     <ProjectCarousel projects={this.state.projects}
                                      projectClick={this.projectClickedHandler}/>
                 </BackDrop>
