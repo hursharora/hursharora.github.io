@@ -12,6 +12,7 @@ import DoorIDImage from "./assets/DoorIDThumb.PNG";
 import TVShowImage from "./assets/TVShowTrackerImg.PNG";
 import NoteSet1 from "./assets/NoteSet1.PNG";
 import NoteSet2 from "./assets/NoteSet2.PNG";
+import * as firebase from "firebase";
 
 
 const DoorID_description =
@@ -67,6 +68,17 @@ const about_description =
         Contact me: hursharora@gmail.com
     </p>
 
+const firebaseConfig = {
+    apiKey: "AIzaSyAMHAAwO-wJb3hRhTgMBZ7wvLJ7nIG589k",
+    authDomain: "personal-website-41144.firebaseapp.com",
+    databaseURL: "https://personal-website-41144.firebaseio.com",
+    projectId: "personal-website-41144",
+    storageBucket: "personal-website-41144.appspot.com",
+    messagingSenderId: "536691094725",
+    appId: "1:536691094725:web:1dc2ad3715320953796cac",
+    measurementId: "G-RVQQX7G5H4"
+};
+
 class App extends Component {
     state = {
         aboutDescription: about_description,
@@ -100,10 +112,16 @@ class App extends Component {
     aboutRef = React.createRef();
     homeRef = React.createRef();
 
+    componentDidMount() {
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    }
+
     projectClickedHandler = id => {
         let clickedProj = this.state.projects[id];
         this.setState({clickedProject: clickedProj,
                             showingModal: true});
+        firebase.analytics().logEvent("clicked_" + clickedProj.name);
     }
 
     modalClosedHandler = () => {
