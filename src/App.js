@@ -14,6 +14,9 @@ import NoteSet1 from "./assets/NoteSet1.PNG";
 import NoteSet2 from "./assets/NoteSet2.PNG";
 import * as firebase from "firebase";
 
+//use react particle - DONE
+//add transition groups
+//replace with functional components
 
 const DoorID_description =
     <p>

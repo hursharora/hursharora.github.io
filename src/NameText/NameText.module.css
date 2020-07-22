@@ -7,6 +7,7 @@
     transform: translate(-50%, -70%);
     font-size: 100px;
     animation: fadin 5s;
+    user-select: none;
 }
 
 @keyframes fadin {
