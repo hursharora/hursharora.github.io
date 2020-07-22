@@ -12,10 +12,10 @@ import DoorIDImage from "./assets/DoorIDThumb.PNG";
 import TVShowImage from "./assets/TVShowTrackerImg.PNG";
 import NoteSet1 from "./assets/NoteSet1.PNG";
 import NoteSet2 from "./assets/NoteSet2.PNG";
-import * as firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/analytics";
 
-//use react particle - DONE
-//add transition groups
+
 //replace with functional components
 
 const DoorID_description =
