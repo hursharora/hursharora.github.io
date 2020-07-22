@@ -12,13 +12,14 @@ const ProjectCarousel = props => {
     ))
 
     return (
-        <div className={classes.ProjectCarousel}>
-            <Zoom>
+        <Zoom>
+            <div className={classes.ProjectCarousel}>
                 <div className={classes.ProjectCarouselRow}>
                     {projects}
                 </div>
-            </Zoom>
-        </div>
+
+            </div>
+        </Zoom>
     );
 }
 
