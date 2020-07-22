@@ -25,7 +25,6 @@
 
 /* Carousel Container */
 .ProjectCarousel {
-    margin-top: 40vh;
     box-sizing: border-box;
     width: 100%;
     overflow-x: auto;

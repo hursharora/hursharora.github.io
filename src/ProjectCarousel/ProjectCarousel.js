@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem/ProjectItem";
 import classes from "./ProjectCarousel.module.css"
+import {Zoom} from "react-reveal"
 
 const ProjectCarousel = props => {
     let projects = props.projects.map(proj => (
@@ -12,9 +13,11 @@ const ProjectCarousel = props => {
 
     return (
         <div className={classes.ProjectCarousel}>
-            <div className={classes.ProjectCarouselRow}>
-                {projects}
-            </div>
+            <Zoom>
+                <div className={classes.ProjectCarouselRow}>
+                    {projects}
+                </div>
+            </Zoom>
         </div>
     );
 }

@@ -88,27 +88,27 @@ class App extends Component {
         clickedProject: null,
         showingModal: false,
         projects: [{
-                        name: "TVShow Tracker",
-                        image: TVShowImage,
-                        image2: null,
-                        description: TVShow_description,
-                        id: 0,
-                        tileStyle: TileStyles.TVShowTracker
-                    }, {
-                        name: "DoorID",
-                        image: DoorIDImage,
-                        image2: null,
-                        description: DoorID_description,
-                        id: 1,
-                        tileStyle: TileStyles.DoorID
-                    }, {
-                        name: "NoteSet",
-                        image: NoteSet1,
-                        image2: NoteSet2,
-                        description: NoteSet_description,
-                        id: 2,
-                        tileStyle: TileStyles.NoteSet
-                    }]
+            name: "TVShow Tracker",
+            image: TVShowImage,
+            image2: null,
+            description: TVShow_description,
+            id: 0,
+            tileStyle: TileStyles.TVShowTracker
+        }, {
+            name: "DoorID",
+            image: DoorIDImage,
+            image2: null,
+            description: DoorID_description,
+            id: 1,
+            tileStyle: TileStyles.DoorID
+        }, {
+            name: "NoteSet",
+            image: NoteSet1,
+            image2: NoteSet2,
+            description: NoteSet_description,
+            id: 2,
+            tileStyle: TileStyles.NoteSet
+        }]
     }
 
     projectRef = React.createRef()
@@ -122,8 +122,10 @@ class App extends Component {
 
     projectClickedHandler = id => {
         let clickedProj = this.state.projects[id];
-        this.setState({clickedProject: clickedProj,
-                            showingModal: true});
+        this.setState({
+            clickedProject: clickedProj,
+            showingModal: true
+        });
         firebase.analytics().logEvent("clicked_" + clickedProj.name);
     }
 
@@ -153,7 +155,6 @@ class App extends Component {
             </>
         )
     }
-
 }
 
 export default App;
