@@ -137,7 +137,7 @@ class App extends Component {
         return (
             <>
                 <NavBar projectRef={this.projectRef} aboutRef={this.aboutRef} homeRef={this.homeRef}/>
-                <BackDrop video sectionRef={this.homeRef}>
+                <BackDrop particle sectionRef={this.homeRef}>
                     <NameText/>
                 </BackDrop>
                 <BackDrop sectionRef={this.aboutRef}>

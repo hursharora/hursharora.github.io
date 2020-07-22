@@ -4,9 +4,9 @@ import classes from "./BackDrop.module.css"
 import Particles from "react-particles-js";
 
 const BackDrop = props => {
-    let video = null;
-    if (props.video) {
-        video = (
+    let particles = null;
+    if (props.particle) {
+        particles = (
             // <video autoPlay muted loop>
             //     <source src={Video}/>
             // </video>
@@ -32,7 +32,7 @@ const BackDrop = props => {
     return (
         <div className={classes.BackDrop} ref={props.sectionRef}>
             {props.children}
-            {video}
+            {particles}
         </div>
     )
 }
