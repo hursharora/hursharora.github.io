@@ -13,7 +13,6 @@ import TVShowImage from "./assets/TVShowTrackerImg.PNG";
 import NoteSet1 from "./assets/NoteSet1.PNG";
 import NoteSet2 from "./assets/NoteSet2.PNG";
 import SMP1 from "./assets/smpvis1.PNG";
-import SMP2 from "./assets/smpvis2.PNG";
 import firebase from "firebase/app";
 import "firebase/analytics";
 
@@ -74,7 +73,8 @@ const SMP_description =
         output to visualize the algorithm.
         <br/><br/>
         You can visit the live version <a href="https://smp-vis.herokuapp.com/">here</a> or you can
-        check out the project Github for the front-end <a href="https://github.com/hursharora/smp-vis-react">here</a> and
+        check out the project Github for the front-end <a
+        href="https://github.com/hursharora/smp-vis-react">here</a> and
         the back-end (including C++ code) <a href="https://github.com/hursharora/smp-vis-node">here</a>.
         <br/><br/><b>Technologies Used: React, Node.js, Express.js, C++, JavaScript, CSS, HTML/JSX, Heroku</b>
     </p>
@@ -83,9 +83,7 @@ const about_description =
     <p>
         I'm a third year Computer Science student at
         The University of British Columbia. Thanks for visiting my website! <br/><br/>
-        Currently I'm working on on a note taking and task management web app using React
-        and Firebase. <br/><br/>
-        Looking for internship opportunities for Winter 2021 and Summer 2021.<br/><br/>
+        Currently interning at Localintel.<br/><br/>
         Check out my <a href="https://github.com/hursharora">Github</a><br/>
         Contact me: hursharora@gmail.com
     </p>
