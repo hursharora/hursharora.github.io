@@ -126,7 +126,7 @@ class App extends Component {
             id: 2,
             tileStyle: TileStyles.NoteSet
         }, {
-            name: "Stable Matching Visualizer",
+            name: "SMPVis",
             image: SMP1,
             image2: null,
             id: 3,
@@ -168,7 +168,9 @@ class App extends Component {
                     <AboutContent desc={this.state.aboutDescription}/>
                 </BackDrop>
                 <BackDrop sectionRef={this.projectRef}>
-                    <SectionHeader>Projects</SectionHeader>
+                    <div className="mb-4">
+                        <SectionHeader>Projects</SectionHeader>
+                    </div>
                     <ProjectModal show={this.state.showingModal}
                                   closed={this.modalClosedHandler}
                                   toDisplay={this.state.clickedProject}/>

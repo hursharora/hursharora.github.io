@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./BackDrop.module.css"
-// import Video from "../assets/VideoBackground.mp4"
 import Particles from "react-particles-js";
 
 const BackDrop = props => {

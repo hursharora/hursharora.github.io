@@ -17,7 +17,6 @@ const ProjectCarousel = props => {
                 <div className={classes.ProjectCarouselRow}>
                     {projects}
                 </div>
-
             </div>
         </Zoom>
     );
