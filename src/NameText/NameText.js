@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./NameText.module.css"
-import {Zoom} from "react-reveal";
+import Zoom from "react-reveal/Zoom";
 
 const NameText = () => {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem/ProjectItem";
 import classes from "./ProjectCarousel.module.css"
-import {Zoom} from "react-reveal"
+import Zoom from "react-reveal/Zoom"
 
 const ProjectCarousel = props => {
     let projects = props.projects.map(proj => (
