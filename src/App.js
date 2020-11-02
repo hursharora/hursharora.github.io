@@ -165,7 +165,6 @@ class App extends Component {
                     <NameText/>
                 </BackDrop>
                 <BackDrop sectionRef={this.aboutRef}>
-                    <SectionHeader>About</SectionHeader>
                     <AboutContent desc={this.state.aboutDescription}/>
                 </BackDrop>
                 <BackDrop sectionRef={this.projectRef}>

@@ -7,9 +7,6 @@ const BackDrop = props => {
     let particles = null;
     if (props.particle) {
         particles = (
-            // <video autoPlay muted loop>
-            //     <source src={Video}/>
-            // </video>
             <Particles className={classes.ParticleCanvas} params={
                 {
                     "particles": {
