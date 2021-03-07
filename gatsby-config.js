@@ -9,17 +9,6 @@ module.exports = {
                 path: './src/images/'
             },
             __key: 'images'
-        },
-        {
-            resolve: 'gatsby-plugin-prefetch-google-fonts',
-            options: {
-                fonts: [
-                    {
-                        family: 'Raleway',
-                        variants: ['600']
-                    }
-                ]
-            }
         }
     ]
 };
