@@ -8,8 +8,7 @@ import SectionHeader from '../components/SectionHeader/SectionHeader';
 import AboutContent from '../components/AboutContent/AboutContent';
 import ProjectModal from '../components/Modal/ProjectModal';
 import TileStyles from '../TileStyles.module.css';
-import firebase from 'firebase/app';
-import 'firebase/analytics';
+
 import {
     About_Description,
     DoorID_Description,
@@ -71,15 +70,16 @@ const App = () => {
     const homeRef = createRef();
 
     useEffect(() => {
-        firebase.initializeApp(FirebaseConfig);
-        firebase.analytics();
+        import('firebase/app').then((firebase) => {
+            firebase.initializeApp(FirebaseConfig);
+            firebase.analytics();
+        });
     }, []);
 
     const projectClickedHandler = (id) => {
         let clickedProj = projects[id];
         setClickedProject(clickedProj);
         setShowingModal(true);
-        firebase.analytics().logEvent('clicked_' + clickedProj.name);
     };
 
     const modalClosedHandler = () => {

@@ -9,6 +9,16 @@ module.exports = {
                 path: './src/images/'
             },
             __key: 'images'
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: 'Hursh Arora',
+                short_name: 'Hursh',
+                start_url: '/',
+                display: 'standalone',
+                icon: 'src/images/logo.png'
+            }
         }
     ]
 };
