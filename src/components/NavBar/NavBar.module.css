@@ -1,7 +1,7 @@
 
 .navBar a, p{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 2rem;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -14,9 +14,13 @@
     right: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 4%;
+    padding: 16px;
     z-index: 100;
     transition: 0.7s ease;
+}
+
+.logo {
+    margin: 0 1rem;
 }
 
 .navBar img {
@@ -25,7 +29,6 @@
 }
 
 .navLinks {
-    margin-bottom: 0;
     list-style: none;
     padding-inline-start: 0;
 }

@@ -1,4 +1,7 @@
 .SectionHeader {
+    position: absolute;
+    top: 90px;
+    margin: 16px 0;
     color: white;
     font-size: 4rem;
     user-select: none;

@@ -3,9 +3,6 @@
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
-}
-
-.NavLink {
     display: inline-block;
     padding: 0 20px;
 }
@@ -17,6 +14,7 @@
     border-color: transparent;
     color: #edf0f1;
     cursor: pointer;
+    font-family: Raleway;
     font-size: inherit;
     font-weight: inherit;
     text-decoration: none;

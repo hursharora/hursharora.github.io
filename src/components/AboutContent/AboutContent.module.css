@@ -1,0 +1,41 @@
+.AboutText {
+    text-align: left;
+    width: 50%;
+}
+
+.AboutText p {
+    font-size: 1.5rem;
+}
+
+.ImageContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.AboutPhoto {
+    margin: 1.5rem;
+    border-radius: 360px;
+    width: 60%;
+}
+
+.AboutContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 1rem 1rem 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .AboutContainer {
+        flex-direction: column;
+    }
+
+    .AboutText {
+        width: 90%;
+    }
+
+    .AboutText p {
+        font-size: 1.5rem;
+    }
+}

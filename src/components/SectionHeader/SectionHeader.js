@@ -3,7 +3,7 @@ import classes from "./SectionHeader.module.css"
 
 
 const SectionHeader = props => (
-    <h1 className={classes.SectionHeader}>{props.children}</h1>
+    <div className={classes.SectionHeader}>{props.children}</div>
 )
 
 export default SectionHeader;
