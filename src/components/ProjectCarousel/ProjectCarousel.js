@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectItem from './ProjectItem/ProjectItem';
-import classes from './ProjectCarousel.module.css';
+import * as classes from './ProjectCarousel.module.css';
 
 const ProjectCarousel = (props) => {
     let projects = props.projects.map((proj) => (

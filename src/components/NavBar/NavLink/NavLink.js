@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./NavLink.module.css"
+import * as classes from "./NavLink.module.css"
 
 
 class NavLink extends React.Component {

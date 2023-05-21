@@ -1,18 +1,17 @@
-import React, { createRef, useEffect, useState } from 'react';
-import '../index.css';
+import React, { createRef, useState } from 'react';
+import * as TileStyles from '../TileStyles.module.css';
+import AboutContent from '../components/AboutContent/AboutContent';
+import BackDrop from '../components/BackDrop/BackDrop';
+import ProjectModal from '../components/Modal/ProjectModal';
+import NameText from '../components/NameText/NameText';
 import NavBar from '../components/NavBar/NavBar';
 import ProjectCarousel from '../components/ProjectCarousel/ProjectCarousel';
-import BackDrop from '../components/BackDrop/BackDrop';
-import NameText from '../components/NameText/NameText';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
-import AboutContent from '../components/AboutContent/AboutContent';
-import ProjectModal from '../components/Modal/ProjectModal';
-import TileStyles from '../TileStyles.module.css';
+import '../index.css';
 
 import {
     About_Description,
     DoorID_Description,
-    FirebaseConfig,
     NoteSet_Description,
     SMP_Description,
     TVShow_Description
@@ -69,12 +68,12 @@ const App = () => {
     const aboutRef = createRef();
     const homeRef = createRef();
 
-    useEffect(() => {
-        import('firebase/app').then((firebase) => {
-            firebase.initializeApp(FirebaseConfig);
-            firebase.analytics();
-        });
-    }, []);
+    // useEffect(() => {
+    //     import('firebase/app').then((firebase) => {
+    //         firebase.initializeApp(FirebaseConfig);
+    //         firebase.analytics();
+    //     });
+    // }, []);
 
     const projectClickedHandler = (id) => {
         let clickedProj = projects[id];

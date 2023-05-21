@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ProjectModal.module.css';
+import * as classes from './ProjectModal.module.css';
 import Img from 'gatsby-image';
 
 const ProjectModal = (props) => {

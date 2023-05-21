@@ -1,12 +1,9 @@
 import React from "react";
-import classes from "./NameText.module.css"
-import Zoom from "react-reveal/Zoom";
+import * as classes from "./NameText.module.css"
 
 const NameText = () => {
     return (
-        <Zoom>
-            <h1 className={classes.NameText}>Hursh Arora</h1>
-        </Zoom>
+        <h1 className={classes.NameText}>Hursh Arora</h1>
     );
 }
 

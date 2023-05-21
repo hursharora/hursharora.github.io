@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import classes from './NavBar.module.css';
+import * as classes from './NavBar.module.css';
 import NavLink from './NavLink/NavLink';
 import Logo from '../../images/logo.png';
 

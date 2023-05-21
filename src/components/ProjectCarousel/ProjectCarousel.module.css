@@ -59,7 +59,6 @@
     -webkit-transform-origin: center left;
     transform-origin: center left;
     cursor: pointer;
-    background: rgba(0, 136, 169, 1);
     border-radius: 16px;
     padding: 4px;
 }

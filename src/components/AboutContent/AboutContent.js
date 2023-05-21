@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AboutContent.module.css';
+import * as classes from './AboutContent.module.css';
 import Img from 'gatsby-image';
 
 const AboutContent = (props) => (

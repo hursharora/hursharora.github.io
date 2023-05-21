@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./BackDrop.module.css"
-import Particles from "react-particles-js";
+import * as classes from "./BackDrop.module.css"
+import Particles from "react-tsparticles";
 
 const BackDrop = props => {
     let particles = null;
