@@ -100,14 +100,14 @@ export const SMP_Description = (
 export const About_Description = (
   <p>
     I'm a Computer Science graduate from The University of British
-    Columbia. Thanks for visiting my website! <br />
+    Columbia.<br />
     <br />
     Former intern at Amazon, Alida, and Localintel
     <br />
     <br />
     Check out my <a href="https://github.com/hursharora">Github</a>
     <br />
-    Contact: <a href="mailto:hursharora@gmail.com">Email</a>, <a href="https://www.linkedin.com/in/hursh-arora-818b22206/">LinkedIn</a>
+    Contact: <a href="mailto:hursharora@gmail.com">Email</a>, <a href="https://www.linkedin.com/in/hursharora/">LinkedIn</a>
   </p>
 );
 

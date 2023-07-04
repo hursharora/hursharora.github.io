@@ -7,9 +7,9 @@ export const useStaticImages = () => {
         allFile(filter: { sourceInstanceName: { eq: "images" } }) {
           nodes {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                placeholder: BLURRED
+              )
             }
             name
           }

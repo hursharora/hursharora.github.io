@@ -1,6 +1,6 @@
 import React from 'react';
 import * as classes from './ProjectModal.module.css';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const ProjectModal = (props) => {
     let modalContent = null;
@@ -14,13 +14,13 @@ const ProjectModal = (props) => {
                 />
                 <div className={classes.Container}>
                     <div className={classes.ImageContainer}>
-                        <Img
-                            fluid={props.toDisplay.image}
+                        <GatsbyImage
+                            image={props.toDisplay.image}
                             alt="Not available"
                         />
                         {props.toDisplay.image2 && (
-                            <Img
-                                fluid={props.toDisplay.image2}
+                            <GatsbyImage
+                                image={props.toDisplay.image2}
                                 alt="Not Available"
                             />
                         )}

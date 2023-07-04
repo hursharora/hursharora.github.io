@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar/NavBar';
 import ProjectCarousel from '../components/ProjectCarousel/ProjectCarousel';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 import '../index.css';
-
+import { getImage } from 'gatsby-plugin-image';
 import {
     About_Description,
     DoorID_Description,
@@ -24,15 +24,15 @@ const App = () => {
 
     const images = useStaticImages();
 
-    const getImageFluid = (imageName) => {
+    const getGatsbyImageData = (imageName) => {
         const image = images.find((node) => node.name === imageName);
-        return image.childImageSharp.fluid;
+        return getImage(image);
     };
 
     const projects = [
         {
             name: 'TVShow Tracker',
-            image: getImageFluid('TVShowTrackerImg'),
+            image: getGatsbyImageData('TVShowTrackerImg'),
             image2: null,
             description: TVShow_Description,
             id: 0,
@@ -40,7 +40,7 @@ const App = () => {
         },
         {
             name: 'DoorID',
-            image: getImageFluid('DoorIDThumb'),
+            image: getGatsbyImageData('DoorIDThumb'),
             image2: null,
             description: DoorID_Description,
             id: 1,
@@ -48,16 +48,16 @@ const App = () => {
         },
         {
             name: 'NoteSet',
-            image: getImageFluid('NoteSet1'),
-            image2: getImageFluid('NoteSet2'),
+            image: getGatsbyImageData('NoteSet1'),
+            image2: getGatsbyImageData('NoteSet2'),
             description: NoteSet_Description,
             id: 2,
             tileStyle: TileStyles.NoteSet
         },
         {
             name: 'SMPVis',
-            image: getImageFluid('smpvis1'),
-            image2: getImageFluid('smpvis2'),
+            image: getGatsbyImageData('smpvis1'),
+            image2: getGatsbyImageData('smpvis2'),
             id: 3,
             description: SMP_Description,
             tileStyle: TileStyles.SMPVis
@@ -99,7 +99,7 @@ const App = () => {
                 <SectionHeader>About</SectionHeader>
                 <AboutContent
                     desc={About_Description}
-                    imgData={getImageFluid('headshot')}
+                    imgData={getGatsbyImageData('headshot')}
                 />
             </BackDrop>
             <BackDrop sectionRef={projectRef}>

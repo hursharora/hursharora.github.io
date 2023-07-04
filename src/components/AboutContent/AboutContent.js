@@ -1,12 +1,12 @@
 import React from 'react';
 import * as classes from './AboutContent.module.css';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutContent = (props) => (
     <div className={classes.AboutContainer}>
         <div className={classes.ImageContainer}>
-            <Img
-                fluid={props.imgData}
+            <StaticImage
+                src="../../images/headshot.jpg"
                 alt="headshot"
                 className={classes.AboutPhoto}
             />

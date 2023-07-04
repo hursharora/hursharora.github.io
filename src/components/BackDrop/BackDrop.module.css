@@ -1,7 +1,7 @@
 .BackDrop {
     text-align: center;
     height: 100vh;
-    background-color: #02232d;
+    background-color: #1f1f1f;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
 
 
 .ParticleCanvas {
-    background-color: #155361;
+    background-color: #181818;
     width: 100%;
     height: 100%;
 }

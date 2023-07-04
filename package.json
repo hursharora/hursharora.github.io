@@ -4,13 +4,16 @@
   "private": true,
   "homepage": "http://hursharora.github.io/",
   "dependencies": {
-    "gatsby": "5.10.0",
-    "gatsby-image": "2.11.0",
-    "gatsby-plugin-manifest": "5.10.0",
-    "gatsby-plugin-sharp": "5.10.0",
-    "gatsby-source-filesystem": "5.10.0",
-    "gatsby-transformer-sharp": "5.10.0",
-    "react-tsparticles": "2.9.3"
+    "gatsby": "5.11.0",
+    "gatsby-plugin-image": "3.11.0",
+    "gatsby-plugin-manifest": "5.11.0",
+    "gatsby-plugin-sharp": "5.11.0",
+    "gatsby-source-filesystem": "5.11.0",
+    "gatsby-transformer-sharp": "5.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-tsparticles": "2.10.1",
+    "tsparticles": "^2.10.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -35,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "2.2.0",
-    "prettier": "2.2.1"
+    "gh-pages": "5.0.0",
+    "prettier": "2.8.8"
   }
 }
