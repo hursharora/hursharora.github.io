@@ -1,85 +1,135 @@
 .Modal {
-    z-index: 500;
-    position: fixed;
-    background-color: white;
-    width: 60%;
-    padding: 24px;
-    height: 80%;
-    border-radius: 20px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+  z-index: 500;
+  position: fixed;
+  background-color: white;
+  width: min(60%, 1100px);
+  padding: 24px;
+  height: min(80%, 850px);
+  max-height: calc(100dvh - 2rem);
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Modal h1 {
-    font-size: 4rem;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  margin: 0.5rem 0 1.5rem;
 }
 
 .ImageContainer {
-    height: 80%
+  height: 80%;
+  overflow: auto;
+}
+
+.ImageContainer img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
 }
 
 .Container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    height: 80%;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  height: 80%;
+  overflow: hidden;
 }
 
 .TextContainer {
-    height: 80%;
-    text-align: left;
-    overflow: auto;
+  height: 80%;
+  text-align: left;
+  overflow: auto;
 }
 
 .TextContainer p {
-    color: black;
-    font-size: 1rem;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .CloseButton {
-    background-color: transparent;
-    border: transparent;
-    outline: none;
-    cursor: pointer;
-    left: 16px;
-    position: absolute;
-    top: 16px;
-    width: 40px;
-    height: 40px;
-    opacity: 0.3;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
+  left: 16px;
+  position: absolute;
+  top: 16px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .CloseButton:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-.CloseButton:before, .CloseButton:after {
-    position: absolute;
-    left: 45%;
-    top: 25%;
-    content: " ";
-    height: 30px;
-    width: 2px;
-    background-color: #333;
+.CloseButton:before,
+.CloseButton:after {
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  content: " ";
+  height: 30px;
+  width: 2px;
+  background-color: #333;
 }
 
 .CloseButton:before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .CloseButton:after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .ModalBackdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .Modal {
+    width: calc(100% - 1.5rem);
+    height: auto;
+    max-height: calc(100dvh - 1.5rem);
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .Modal h1 {
+    padding-left: 2.25rem;
+    text-align: left;
+  }
+
+  .Container {
+    display: flex;
+    height: auto;
+    overflow: visible;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ImageContainer,
+  .TextContainer {
+    height: auto;
+    overflow: visible;
+  }
+
+  .ImageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .TextContainer p {
+    margin-bottom: 0;
+  }
 }

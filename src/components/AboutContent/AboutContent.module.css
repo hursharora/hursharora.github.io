@@ -1,41 +1,53 @@
 .AboutText {
-    text-align: left;
-    width: 50%;
+  text-align: left;
+  width: 50%;
+  color: #edf0f1;
 }
 
 .AboutText p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.45;
 }
 
 .ImageContainer {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .AboutPhoto {
-    margin: 1.5rem;
-    border-radius: 360px;
-    width: 60%;
+  margin: 1.5rem;
+  border-radius: 360px;
+  width: min(60%, 420px);
 }
 
 .AboutContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 100px 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 1rem 1rem 1rem;
+  width: min(1200px, calc(100% - 2rem));
 }
 
-@media only screen and (max-width: 576px) {
-    .AboutContainer {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 768px) {
+  .AboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    margin: 145px 1rem 3rem;
+  }
 
-    .AboutText {
-        width: 90%;
-    }
+  .ImageContainer,
+  .AboutText {
+    width: 100%;
+  }
 
-    .AboutText p {
-        font-size: 1.5rem;
-    }
+  .AboutText p {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    line-height: 1.5;
+  }
+
+  .AboutPhoto {
+    width: min(68vw, 280px);
+    margin: 0 0 1.5rem;
+  }
 }

@@ -99,27 +99,17 @@ export const SMP_Description = (
 
 export const About_Description = (
   <p>
-    I'm a Computer Science graduate from The University of British
-    Columbia.<br />
+    I'm currently a Software Engineer at Amazon and a Computer Science graduate
+    from the University of British Columbia.
     <br />
-    Former intern at Amazon, Alida, and Localintel
+    <br />
+    Before joining Amazon full-time, I interned at Amazon, Alida, and
+    Localintel.
     <br />
     <br />
     Check out my <a href="https://github.com/hursharora">Github</a>
     <br />
-    Contact: <a href="mailto:hursharora@gmail.com">Email</a>, <a href="https://www.linkedin.com/in/hursharora/">LinkedIn</a>
+    Contact: <a href="mailto:hursharora@gmail.com">Email</a>,{" "}
+    <a href="https://www.linkedin.com/in/hursharora/">LinkedIn</a>
   </p>
 );
-
-export const FirebaseConfig = {
-  apiKey: "AIzaSyAMHAAwO-wJb3hRhTgMBZ7wvLJ7nIG589k",
-  authDomain: "personal-website-41144.firebaseapp.com",
-  databaseURL: "https://personal-website-41144.firebaseio.com",
-  projectId: "personal-website-41144",
-  storageBucket: "personal-website-41144.appspot.com",
-  messagingSenderId: "536691094725",
-  appId: "1:536691094725:web:1dc2ad3715320953796cac",
-  measurementId: "G-RVQQX7G5H4",
-};
-
-

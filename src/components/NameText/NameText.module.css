@@ -1,9 +1,10 @@
 .NameText {
-    color: white;
-    z-index: 30;
-    font-size: 6rem;
-    user-select: none;
-    position: absolute;
+  color: white;
+  z-index: 30;
+  font-size: clamp(3.25rem, 10vw, 6rem);
+  line-height: 1;
+  margin: 0;
+  padding: 0 1rem;
+  user-select: none;
+  position: absolute;
 }
-
-
