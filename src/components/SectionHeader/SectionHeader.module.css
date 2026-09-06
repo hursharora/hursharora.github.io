@@ -1,8 +1,9 @@
 .SectionHeader {
-    position: absolute;
-    top: 90px;
-    margin: 16px 0;
-    color: white;
-    font-size: 4rem;
-    user-select: none;
+  position: absolute;
+  top: clamp(72px, 10vh, 90px);
+  margin: 16px 0;
+  color: white;
+  font-size: clamp(2.75rem, 8vw, 4rem);
+  line-height: 1.1;
+  user-select: none;
 }
